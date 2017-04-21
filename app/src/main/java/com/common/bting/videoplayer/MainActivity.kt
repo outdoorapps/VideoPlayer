@@ -14,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val videoPlayer = find<VideoPlayer>(R.id.video_player)
-        val url = URL(link1)
         videoPlayer.setVideoURI(Uri.parse(link1))
 
     }
