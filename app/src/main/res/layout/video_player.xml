@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black">
+
+    <com.studiesweekly.common.video.VideoPlayerView
+        android:id="@+id/video_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/video_preview_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:srcCompat="@drawable/play_circle_outline"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/video_replay_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:srcCompat="@drawable/replay_circle_outline"
+        tools:ignore="ContentDescription" />
+
+    <ProgressBar
+        android:id="@+id/video_view_progress_bar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:indeterminate="true"
+        android:visibility="gone" />
+</FrameLayout>
